@@ -1,10 +1,22 @@
 {% if menu %}
-	<ul class="nav-main__items">
-	{% for item in items %}
-		<li class="{{ item.classes | join(' ') }} nav-main__item">
-			<a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
-			{% include "menu.twig" with {'items': item.children} %}
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="ml-0 ml-md-auto navbar-nav nav-main__items">
+		<li class="nav-item dropdown nav-main__item projects-list nav-main__dropdown">
+			<a class="py-3 py-md-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+			<ul class="dropdown-menu nav-sub__items">
+				{% for item in items %}
+					<li class="dropdown-item text-sm-center text-md-left"><a class="dropdown-item__link w-100 h-100 d-block" target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a></li>
+				{% endfor %}
+			</ul>
 		</li>
-	{% endfor %}
+
+	<li class="nav-main__item nav-item"><a class="py-3 py-md-0 nav-link" href="/about">About</a></li>
+	<li class="nav-main__item nav-item social"><a class="py-3 py-md-0 nav-link" href="https://instagram.com/kevinromoser"><img src="{{ theme.path }}/assets/img/ig.svg" alt="IG" class="menu-icon"></a></li>
+	<li class="nav-main__item nav-item social pr-lg-3 pb-sm-1 pb-md-0"><a class="py-3 py-md-0 nav-link" href="https://github.com/kromoser"><img src="{{ theme.path }}/assets/img/gh.svg" alt="GH" class="menu-icon"></a></li>
 	</ul>
+</div>
+
 {% endif %}

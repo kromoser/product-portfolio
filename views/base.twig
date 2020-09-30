@@ -11,12 +11,27 @@
 		<header class="header" >
 			{% block header %}
 				<div class="wrapper row h-100">
-					<h2 class="name col-sm-12 col-md-6 text-sm-center text-md-left my-auto" role="banner">
-						<a class="name__link" href="{{site.url}}" rel="home">{{site.name}}</a>
-					</h2>
-					<nav id="nav-main" class="nav-main col-sm-12 col-md-6 text-md-right text-sm-center my-auto ml-auto" role="navigation">
-						{% include "menu.twig" with {'items': menu.get_items} %}
-					</nav><!-- #nav -->
+					<div class="nav-wrap p-0 col-sm-12 text-center row m-0 text-md-left mx-sm-auto mr-lg-auto my-auto">
+						<h2 class="col-sm-12 col-md-6 name text-sm-center text-md-left my-auto" role="banner">
+							<a class="name__link" href="{{site.url}}" rel="home">{{site.name}}</a>
+							<button class="d-md-none ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<svg class="navbar-toggler-icon" version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 512 183.41" style="enable-background:new 0 0 512 183.41;" xml:space="preserve">
+							<rect width="512" height="59.02"/>
+							<rect x="0" y="124.39" width="512" height="59.02"/>
+							</svg>
+							</button>
+						</h2>
+
+
+						<nav id="nav-main" class="p-0 col-sm-12 col-md-6 nav-main text-md-right text-sm-center my-auto ml-auto navbar navbar-expand-md" role="navigation">
+							{% include "menu.twig" with {'items': menu.get_items} %}
+						</nav><!-- #nav -->
+					</div>
+
+
+
+
 				</div>
 			{% endblock %}
 		</header>
@@ -47,5 +62,7 @@
 			</footer>
 			{{ function('wp_footer') }}
 		{% endblock %}
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	</body>
 </html>
