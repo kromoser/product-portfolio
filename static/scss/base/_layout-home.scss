@@ -1,0 +1,44 @@
+body {
+  background: var(--color-secondary);
+}
+
+.hero {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  min-height: 60vh;
+  margin-top: 34vh;
+}
+
+.hi {
+  height: 30vh;
+  position: absolute;
+  top: -29vh;
+}
+
+.subtitle {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .25rem;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.project-list__project {
+  padding: .5rem 0 0;
+  margin: .25rem 0;
+  font-size: 1.6rem;
+
+  a {
+    color: $color-secondary;
+  }
+}
+
+.home-bio {
+  font-size: 1.6rem;
+  font-weight: 400;
+}

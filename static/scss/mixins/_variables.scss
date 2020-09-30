@@ -1,0 +1,14 @@
+// Import Elido and Kopius from Typekit
+@import url("https://use.typekit.net/eff7qkr.css");
+
+$sans: Elido, Futura, "Helvetica Neue", Helvetica, sans-serif; // Weights: 400, 700, 900
+$serif: Kopius, "Adobe Garamond Pro", Garamond, Caslon, serif; // Weights: 400, 600
+
+$color-primary: #46214a;
+$color-secondary: #fffdeb;
+$black: #000000;
+
+:root {
+  --color-primary: #46214a;
+  --color-secondary: #fffdeb;
+}

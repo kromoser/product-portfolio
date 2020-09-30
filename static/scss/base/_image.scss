@@ -1,0 +1,19 @@
+// Reset awful Gutenberg image sizing nonsense
+.wp-block-image img {
+  height: auto !important;
+}
+
+.wp-img-drop-shadow img {
+  box-shadow: 0 0 8px rgba($black, 0.3) !important;
+}
+
+
+figcaption {
+  font-family: $sans;
+  font-size: 0.6rem;
+  font-style: italic;
+
+  em, i {
+    font-style: normal;
+  }
+}

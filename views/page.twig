@@ -1,0 +1,28 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper col-sm-10 col-md-9 col-lg-8 mx-auto">
+		<article class="post-type-{{post.post_type}} mt-5" id="post-{{post.ID}}">
+			<section class="article-content">
+				<h1 class="subtitle">{{post.title}}</h1>
+				<div class="article-body">
+					{{post.content}}
+				</div>
+			</section>
+		</article>
+
+		{% if projects %}
+			<h2 class="mt-5">Recent Projects</h2>
+			<ul class="project-list">
+				{% for project in projects %}
+					<li class="project-list__project">
+						<a href="{{ project.link }}">{{ project.title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+
+
+
+	</div><!-- /content-wrapper -->
+{% endblock %}

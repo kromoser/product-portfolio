@@ -1,0 +1,28 @@
+.header {
+  height: 6vh;
+  background: rgba($color-secondary, 0.8);
+  border-bottom: 2px solid var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 15px;
+}
+
+.name {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  font-weight: 900;
+}
+
+.nav-main__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-main__item {
+  display: inline-block;
+}
