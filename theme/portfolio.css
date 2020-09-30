@@ -11228,6 +11228,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
+p a {
+  text-decoration: underline; }
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -11309,6 +11312,23 @@ body {
   font-size: 1.6rem;
   font-weight: 400; }
 
+.info-sidebar p, .info-sidebar li, .info-sidebar a {
+  font-size: 0.75rem; }
+
+.info-sidebar h2 {
+  font-size: 0.8rem; }
+
+.footer {
+  margin-top: 4rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: Elido, Futura, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  letter-spacing: 0.15rem; }
+
 .wp-block-image img {
   height: auto !important; }
 
@@ -11321,6 +11341,10 @@ figcaption {
   font-style: italic; }
   figcaption em, figcaption i {
     font-style: normal; }
+
+.skill-list {
+  list-style: none;
+  padding: 0; }
 
 .header {
   height: 6vh;
@@ -11415,3 +11439,10 @@ figcaption {
   .drag-panel:hover {
     opacity: 0.3;
     transition: opacity 0.2s; }
+
+.small-caps {
+  font-size: 0.8em; }
+
+.sticky {
+  position: sticky;
+  top: 8vh; }
